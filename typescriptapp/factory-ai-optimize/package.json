@@ -1,0 +1,27 @@
+{
+  "name": "factory-ai-optimize",
+  "version": "1.0.0",
+  "description": "AI-Powered Multi-Camera Vision LLM System for Factory Optimization",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "ts-node src/app.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.11"
+  },
+  "keywords": ["AI", "factory", "optimization", "LLM", "computer-vision"],
+  "author": "Your Name",
+  "license": "MIT"
+}
