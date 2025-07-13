@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { logger } from '../utils/logger';
+import { logError } from '../utils/logger';
 
 export function errorHandler(
   err: Error,
@@ -7,8 +7,8 @@ export function errorHandler(
   res: Response,
   next: NextFunction
 ) {
-  logger.error(`Error: ${err.message}`);
-  logger.error(err.stack || 'No stack trace');
+  logError(`Error: ${err.message}`);
+  logError(err.stack || 'No stack trace');
 
   res.status(500).json({
     error: 'Internal Server Error',
